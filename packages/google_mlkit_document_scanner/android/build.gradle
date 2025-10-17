@@ -24,7 +24,8 @@ apply plugin: "com.android.library"
 android {
     namespace = "com.google_mlkit_document_scanner"
 
-    compileSdk = 35
+    compileSdkVersion 36
+    ndkVersion = "28.2.13676358"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -32,10 +33,10 @@ android {
     }
 
     defaultConfig {
-        minSdk = 21
+        minSdk = 24
     }
 
     dependencies {
-        implementation("com.google.android.gms:play-services-mlkit-document-scanner:16.0.0-beta1")
+        implementation("com.google.android.gms:play-services-mlkit-document-scanner:16.0.0")
     }
 }
